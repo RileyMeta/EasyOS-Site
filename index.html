@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Temporary Background: <a href="https://www.freepik.com/free-vector/lines-vector-seamless-pattern-banner-geometric-striped-ornament-monochrome-linear-background-illustration_34429128.htm#page=2&query=seamless%20pattern&position=38&from_view=keyword&track=ais&uuid=bd6e118c-8bb2-4b10-a655-853bfe149ed5">Image by flatart</a> on Freepik -->
+    <title>EasyOS | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="EasyOS | An Experimental Linux Distribution">
+    <meta property="og:image" content="https://easyos.org/images0/top-banner.png">
+    <meta property="og:image:secure_url" content="https://easyos.org/images0/top-banner.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <meta property="og:url" content="https://www.easyos.org/">
+    <meta property="og:site_name" content="EasyOS">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="EasyOS | An Experimental Linux Distribution">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="">
+</head>
+<body>
+<div id="page-wrapper">
+    <a href="#home"><img src="/Assets/top-banner.png" alt="EasyOS Banner Image" />
+<nav>
+    <ul>
+        <li><a href="#site" id="home_button"><i class="fa-solid fa-house"></i>site</a></li>
+        <li class="list_spacer">|</li>
+        <li><a href="#news"><i class="fa-solid fa-newspaper"></i>news</a></li>
+        <li class="list_spacer">|</li>
+        <li><a href="#contact"><i class="fa-solid fa-address-card"></i>contact</a></li>
+        <li class="list_spacer">|</li>
+        <li><a href="#history"><i class="fa-solid fa-hourglass"></i>history</a></li>
+        <li><form action="https://www.google.com/search" target="_blank" style="float:right">
+            <input type="text" name="q" value="" placeholder="Search..." style="width:120">
+            <input type="hidden" name="sitesearch" value="easyos.org">   
+            <button type="submit">Go</button></form>
+        </li>
+    </ul>
+</nav>
+<div class="menu_button">
+    <button onclick="menuVisibility()"><i class="fa-solid fa-bars"></i>&nbsp;Menu</button>
+</div>
+<div id="menu_nav">
+    <ul>
+        <li><a href="#site" id="home_button"><i class="fa-solid fa-house"></i>&nbsp;site</a></li>
+        <li><a href="#news"><i class="fa-solid fa-newspaper"></i>&nbsp;news</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-address-card"></i>&nbsp;contact</a></li>
+        <li><a href="#history"><i class="fa-solid fa-hourglass"></i>&nbsp;history</a></li>
+        <li class="search_input">
+            <form action="https://www.google.com/search" target="_blank" style="float:right"></form>
+            <input type="text" name="q" value="Search...">
+            <input type="hidden" name="sitesearch" value="easyos.org">
+        </li>
+    </ul>
+</div>
+<div class="content">
+    <div class="desktop_preview">
+        <h1 id="preview_title">Fast, Container Friendly, and No ISO</h1>
+        <img src="/Assets/Desktop1.png" alt="A preview image of the EasyOS Desktop Environment running">
+        <p class="description">EasyOS is an experimental Linux distribution which uses many of the technologies and package formats pioneered by Puppy Linux. The distribution features custom container technology called Easy Containers which can run applications or the entire desktop environment in a container.</p>
+    </div>
+    <div class="spacer"></div>
+    <div class="download">
+        <p>Download EasyOS Now!</p>
+        <button onClick="window.location.href = 'https://distro.ibiblio.org/easyos/amd64/releases/kirkstone/2024/5.7/easy-5.7-amd64.img'">Download <i class="fa-solid fa-download"></i></button>
+        <div class="download_description">
+            <p>EasyOS ships as a .img file, that is written to a drive.</p>
+            <p>For more information about this decision, <a href="https://easyos.org/about/why-the-iso-format-has-to-die.html">click here</a></p>
+            <p>If you have any questions about the installation, please refer our <a href="https://easyos.org/tag_install.html">Installation Tutorials</a>.</p>
+        </div>
+        <div class="spacer"></div>
+    </div>
+    <div class="news">
+        <h1 class="news_header">What's New in EasyOS v5.7</h1>
+        <p class="news_description"></p>
+        <p>For more indepth information,<a href="https://distro.ibiblio.org/easyos/amd64/releases/kirkstone/2024/5.7/release-notes.htm">click here.</a></p>
+        <ul class="news_list">
+            <li>Kernel updated to 5.15.148</li>
+            <li>Added new applications: KeePassXC, Symphytum, Flowblade, p7zip</li>
+            <li>Added more translations: Turkish and Russian</li>
+            <li>Improved support for VMs, with AQEMU and QtEmu</li>
+            <li>Sync'd with OpenEmbedded/Yocto release 4.0.14</li>
+        </ul>
+    </div>
+    <div class="spacer"></div>
+    <div class="packages">
+        <h1 class="packages_header">Our Unique Aproach to Packages</h1>
+        <p>EasyOS uses 4 separate package managers to make sure you get the applications you need. For more information <a href="https://easyos.org/user/package-manager-concepts.html">click here.</a></p>
+        <img src="/Assets/pkg-1.png" alt="pkg desktop icon" class="pkg_icon">
+        <p>Click the pkg icon on your Desktop and it'll open the available Package Managers</p>
+        <img src="/Assets/pkg-wrap2.png" alt="pkg wrapper" class="pkg_manager">
+        <p>From an install directly in your root directory to unique user or even a custom container, whatever makes you feel the most comfortable, you can have.</p>
+    </div>
+    <div class="spacer"></div>
+    <p class="sitemap">Want to learn more about EasyOS? Visit our <a href="#sitemap">Site Map</a>.</p>
+</div>
+<div class="footer">
+    <a href="https://bkhome.org/">&copy; Copyright Barry Kauler 2018 - 2024</a>
+</div>
+</div>
+<script>
+    function menuVisibility() {
+        var x = document.getElementById("menu_nav");
+        if (x.style.display === 'none') {
+          x.style.display = 'block';
+        } else {
+          x.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
